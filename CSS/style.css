@@ -1,3 +1,7 @@
+* {
+  margin: 0%;
+}
+
 body {
   background-image: url('https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg');
   background-repeat: no-repeat;
@@ -12,13 +16,55 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  background-color: black;
-  padding: 10px;
+}
+
+.navbar-bg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(160, 109, 15);
+  height: 100px;
+  width: 650px;
+  transform: skew(20deg, 0deg);
+  position: absolute;
+  top: 0px;
+  right: -30px;
 }
 
 nav a {
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100px;
+  height: 50px;
+  background-color: orangered;
   text-decoration: none;
+  margin-left: 30px;
+}
+
+nav a:nth-child(5) {
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  margin-right: 50px ;
+}
+
+nav p {
+  transform: skew(-20deg);
+}
+
+nav img {
+  transform: skew(-20deg);
+}
+
+.cart-img {
+  transform: skew(-20);
+  height: 40px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5%;
+  padding: 5px;
 }
