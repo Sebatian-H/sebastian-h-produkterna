@@ -10,8 +10,10 @@ body {
 }
 
 .container {
-  height: auto;
-  width: auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
 
 nav {
@@ -28,6 +30,21 @@ nav {
   flex-direction: row-reverse;
   height: 100px;
   width: 45%;
+}
+
+#trapezoid { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-top: 100px solid rgb(0, 55, 79);
+  border-left: 30px solid transparent;
+  height: 0px;
+  width: 45%;
+  position:absolute;
+  top:0px;
+  right: 0px;
+  margin-left: 50px;
 }
 
 nav a {
@@ -58,8 +75,75 @@ nav img {
   transform: skew(-20deg);
 }
 
+.container-products {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 68, 0);
+  width: 90%;
+  height: 400px;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+
+.child:nth-child(1){
+  display: flex; 
+  justify-content: center;
+  background-color: transparent;
+  height: 16px;
+  width: 100%;
+}
+
+.child {
+  display: flex;
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: wrap;
+  background-color: orange;
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.categories-list h2 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 15%;
+  width: 100%;
+}
+
+.categori {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 10%;
+  height: 78%;
+  width: 17%;
+  margin-left: 5px; 
+  margin-right: 5px;
+}
+
+.categori a {
+  color: black;
+  text-decoration: none;
+}
+
 .cart-img {
-  transform: skew(-20);
   height: 40px;
   border: 2px;
   border-style: solid;
@@ -69,20 +153,5 @@ nav img {
 
 .logo-img {
   max-width: 400px;
-  margin-left: 50px;
-}
-
-#trapezoid { 
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row-reverse;
-  border-top: 100px solid rgb(0, 55, 79);
-  border-left: 30px solid transparent;
-  height: 0px;
-  width: 45%;
-  position:absolute;
-  top:0px;
-  right: 0px;
   margin-left: 50px;
 }
