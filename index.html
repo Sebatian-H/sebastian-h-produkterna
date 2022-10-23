@@ -6,16 +6,45 @@
     <body>
         <div class="container">
             <nav>
-                <img class="logo-img" src="./IMG/Clockworks-logo.png">
-                <div id="trapezoid"></div>
-                <div class="navbar-bg">
-                    <a href="#"><img class="cart-img" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"></a>
-                    <a href="./HTML/about.html"><p>Om oss</p></a>
-                    <a href="./HTML/contacts.html"><p>Kontakt</p></a>
-                    <a href="./HTML/products.html"><p>Produkter</p></a>
+                <img class="logo-img" src="../IMG/Clockworks-logo.png">
+                <div class="navbar">
                     <a href="./index.html"><p>Hem</p></a>
+                    <a href="./HTML/products.html"><p>Produkter</p></a>
+                    <a href="./HTML/contacts.html"><p>Kontakt</p></a>
+                    <a href="./HTML/about.html"><p>Om oss</p></a>
+                    <a href="./HTML/cart.html"><img class="cart-img" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"></a>
                 </div>
             </nav>
+            <div class="slideshow">
+                <div class="slideshow-text">
+                    <h2>Välkommen</h2>
+                    <p>Insert text info company and site. djfkgjdflkjkjkdsjfkdsfkldjghfrsdxvbndfdsakksd sdj djsjg lösdk jdsj ljsdh kjdskj sdjfkdsk l fjsdlgkdslskfkdskgl jsdkjg ksdjk dskj gkjs odsk s kdjs jksjd jkdjkgl dsjkg sjdk jkjds</p>
+                </div>
+                <div class="slideshow-image">
+                    <img id="image1">
+                </div>
+            </div>
+            <script>
+                var imgArray = [
+                    './IMG/slideshow-img1.jpeg',
+                    './IMG/slideshow-img2.jpeg',
+                    './IMG/slideshow-img3.jpeg',
+                    './IMG/slideshow-img4.webp'
+                ];
+                var curIndex = 0;
+                var imgDuration = 7000;
+
+                function slideShow() {
+                    document.getElementById('image1').src = imgArray[curIndex];
+                    curIndex++;
+                    if (curIndex == imgArray.length) { curIndex = 0; }
+                    setTimeout("slideShow()", imgDuration);
+                }
+                slideShow();
+            </script>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
         </div>
     </body>
 </html>

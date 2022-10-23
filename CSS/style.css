@@ -1,16 +1,23 @@
 * {
   margin: 0%;
 }
-
+/*Gör så att body får en bild som bakgrund och att den täcker hela skärmen*/
 body {
+  display:flex; 
+  flex-direction:column;
   background-image: url('https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg');
-  background-repeat: repeat-y;
-  backface-visibility: hidden;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 55, 79);
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: auto;
 }
 
+/*Använde flex:1; för att containerna skulle täcka hela sidan*/
 .container {
   display: flex;
+  flex:1;
   height: 100%;
   width: 100%;
   flex-direction: column;
@@ -21,33 +28,22 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.navbar-bg {
+/*gör så att det ligger en bakgrund högst upp till höger på skärmen där formen är en rektangel där vänstra sidan har en vinkel*/
+.navbar {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row-reverse;
-  height: 100px;
-  width: 45%;
-}
-
-#trapezoid { 
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row-reverse;
+  justify-content: flex-start;
+  flex-direction: row;
   border-top: 100px solid rgb(0, 55, 79);
-  border-left: 30px solid transparent;
+  border-left: 37.5px solid transparent;
   height: 0px;
   width: 45%;
-  position:absolute;
-  top:0px;
-  right: 0px;
-  margin-left: 50px;
 }
 
-nav a {
+/*transform: skew(20deg); gör så att rutan som länken ligger i får en 20 graders lutning på x-axeln*/
+.navbar a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,50 +54,65 @@ nav a {
   text-decoration: none;
   margin-left: 30px;
   transform: skew(20deg);
+  position: relative;
+  top: -75px;
+  overflow: hidden;
 }
 
-nav a:nth-child(1) {
+/*Ändrar så att texten inte är sneddad längre utan bara paralellogramet bakom*/
+.navbar p {
+  transform: skew(-20deg);
+}
+
+/*Gör så att femta a tagen i nav har en genomskinlig backgrund, en annan width och inte har någon grads skew*/
+.navbar a:nth-child(5) {
   background-color: transparent;
   height: 50px;
   width: 50px;
   color: black;
+  transform: skew(0deg);
 }
 
-nav p {
-  transform: skew(-20deg);
-}
-
-nav img {
-  transform: skew(-20deg);
-}
-
-.container-products {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-self: center;
-  flex-wrap: wrap;
-  background-color: rgba(255, 68, 0);
-  width: 90%;
-  height: 400px;
-  margin-top: 50px;
-  border-radius: 50px;
-}
-
-.child:nth-child(1){
-  display: flex; 
-  justify-content: center;
-  background-color: transparent;
-  height: 16px;
+.footer {
+  margin-top: 1%;
   width: 100%;
+  height: 50px;
+  background-color: rgb(0, 55, 79);
+  color: white;
+  text-align: center;
 }
 
-.child {
+.hot-products {
   display: flex;
-  background-color: green;
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  height: 30%;
+  width: 99%;
+  border-radius: 30px;
+  margin: 4px;
+}
+
+.hot-products h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 10%;
+  margin: 5px;
+  color: aliceblue;
+  background-color: rgb(0, 55, 79);
+  transform: skew(-20deg);
+}
+/*gör så objecten inom div går att skrolla på genom x-axeln med hjälp av overflow-x: scroll;*/
+.hot-products-content {
+  display: flex;
+  align-self: center;
+  background-color: transparent;
+  width: 95%;
+  height: 90%;
+  border-radius: 30px;
+  overflow-x: scroll;
 }
 
 .categories-list {
@@ -110,48 +121,155 @@ nav img {
   flex-direction: row;
   align-self: center;
   flex-wrap: wrap;
-  background-color: orange;
-  width: 90%;
+  background-color: transparent;
+  width: 94.05%;
   height: 200px;
-  margin-top: 20px;
   border-radius: 20px;
+  padding-left: 2.475%;
+  padding-right: 2.475%;
 }
-
+/*100% width för att texten ska hamna högst upp i diven samtidigt som resterande object wrapas nedanför*/
 .categories-list h2 {
   display: flex; 
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  height: 15%;
-  width: 100%;
+  background-color: rgb(0, 55, 79);
+  color: aliceblue;
+  height: 20%;
+  width: 10%;
+  margin-bottom: 5px;
+  margin-left: 45%;
+  margin-right: 45%;
+  transform: skew(-20deg);
 }
 
 .categori {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  border-radius: 10%;
-  height: 78%;
-  width: 17%;
+  border-radius: 20px;
+  height: 75%;
+  width: 24%;
   margin-left: 5px; 
   margin-right: 5px;
 }
 
+.categori:nth-child(2) {
+  background-image: url("../IMG/categorie-img/ctg-men.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categori:nth-child(3) {
+  background-image: url("../IMG/categorie-img/ctg-pemium.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categori:nth-child(4) {
+  background-image: url("../IMG/categorie-img/ctg-smartwatch.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categori:nth-child(5) {
+  background-image: url("../IMG/categorie-img/ctg-women.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .categori a {
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  color: white;
   text-decoration: none;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.products {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 94.05%;
+  height: 75%;
+}
+
+.product-child {
+  height: 48%;
+  width: 19.8%;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+}
+
+.product-child a {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.product-child img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.slideshow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.slideshow-image{
+  height: 500px;
+  width: 60%;
+  background-color: rgb(0, 55, 79);
+}
+.slideshow-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 500px;
+  background-color: orange;
+  border-start-start-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.slideshow-text p{
+  margin-right: 7.5px;
+  margin-left: 7.5px;
 }
 
 .cart-img {
   height: 40px;
+  width: 40px;
   border: 2px;
   border-style: solid;
   border-radius: 5%;
-  padding: 5px;
+  padding: 3px;
 }
 
 .logo-img {
   max-width: 400px;
   margin-left: 50px;
+}
+
+.hot-products-content img{
+  height: 97.5%;
+  width: 24.8%;
+  margin-right: 0.2%;
+  margin-left: 0.2;
+  border-radius: 30px;
 }
