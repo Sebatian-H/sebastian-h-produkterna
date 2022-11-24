@@ -12,12 +12,12 @@ body {
   background-color: rgb(0, 55, 79);
   min-height: 100vh;
   min-width: 100vw;
+  /* Tar bort scrollbar från IE and Edge */
   -ms-overflow-style: none;
-  /* IE and Edge */
+  /*Tar bort scrollbar från Firefox */
   scrollbar-width: none;
-  /* Firefox */
 }
-
+/*Tar bort scrollbar från andra browsers*/
 body::-webkit-scrollbar {
   display: none;
 }
@@ -63,6 +63,7 @@ nav {
   margin-left: 30px;
   transform: skew(20deg);
   position: relative;
+  /*-75px då den annars ligger 75 pixlar under mitten från navbaren*/
   top: -75px;
   overflow: hidden;
 }
@@ -80,14 +81,13 @@ nav {
   width: 100%;
   height: 50px;
   background-color: rgb(0, 55, 79);
-  color: white;
 }
 
 .footer a{
   color: whitesmoke;
 }
-
-.hot-products {
+/*gör så objecten inom div går att skrolla på genom x-axeln med hjälp av overflow-x: scroll;*/
+.popular-products {
   display: flex;
   align-self: center;
   height: 30%;
@@ -111,7 +111,7 @@ nav {
 }
 
 /*gör så objecten inom div går att skrolla på genom x-axeln med hjälp av overflow-x: scroll;*/
-.hot-products-content {
+.popular-products-content {
   display: flex;
   align-self: center;
   background-color: transparent;
@@ -159,12 +159,13 @@ nav {
   margin-right: 5px;
 }
 
+/*Lägger bakgrundsbild på diven*/
 .categori:nth-child(2) {
   background-image: url("../IMG/categorie-img/ctg-men.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*Lägger bakgrundsbild på diven*/
 .categori:nth-child(3) {
   background-image: url("../IMG/categorie-img/ctg-women.jpeg");
   background-repeat: no-repeat;
@@ -216,6 +217,7 @@ nav {
   border-radius: 20px;
 }
 .cart-icon {
+  /*-75px så att den hamnar i mitten av navbaren annars ligger den under*/
   top: -75px;
   background-color: transparent;
   height: 50px;
@@ -289,13 +291,13 @@ nav {
   margin-left: 50px;
 }
 
-.hot-products-content img {
+.popular-products-content img {
   height: 100%;
   width: 100%;
   border-radius: 30px;
 }
 
-.hot-products-content button {
+.popular-products-content button {
   height: 90%;
   width: 358px;
   background-color: transparent;
