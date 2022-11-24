@@ -73,12 +73,18 @@ nav {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2%;
   width: 100%;
   height: 50px;
   background-color: rgb(0, 55, 79);
   color: white;
-  text-align: center;
+}
+
+.footer a{
+  color: whitesmoke;
 }
 
 .hot-products {
@@ -312,8 +318,11 @@ nav {
 }
 
 .investor-img {
-  height: 100px;
-  width: 110px;
+  height: 110px;
+  width: 120px;
+  margin-right: 10px;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .investor-info {
@@ -336,10 +345,6 @@ nav {
   margin-right: 0.5%;
 }
 
-.investor-info img {
-  margin-right: 10px;
-  margin: 5px;
-}
 
 .support-info {
   display: flex;
@@ -362,4 +367,23 @@ nav {
 .it-guy h4 {
   margin-top: 10px;
   align-self: center;
+}
+
+ul {
+  color: whitesmoke;
+  background-color: orange;
+  border-radius: 20px;
+  margin: 1%;
+}
+
+h4 {
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 5px;
+  align-self: center  ;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
