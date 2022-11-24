@@ -237,7 +237,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 99%;
   height: 500px;
   margin-left: 1%;
 }
@@ -309,4 +309,57 @@ nav {
   height: 40px;
   background-color: orange;
   border-radius: 30px;
+}
+
+.investor-img {
+  height: 100px;
+  width: 110px;
+}
+
+.investor-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.investor-info p{
+  display: flex;
+  background-color: orange;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: whitesmoke;
+  width: 32%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.investor-info img {
+  margin-right: 10px;
+  margin: 5px;
+}
+
+.support-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  color: whitesmoke;
+  background-color: orange;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.it-guy {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.it-guy h4 {
+  margin-top: 10px;
+  align-self: center;
 }
