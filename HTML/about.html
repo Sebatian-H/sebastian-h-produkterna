@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../CSS/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <img class="logo-img" src="../IMG/Clockworks-logo.png">
-                <div class="navbar">
-                    <a href="../index.html"><p>Hem</p></a>
-                    <a href="./products.html"><p>Produkter</p></a>
-                    <a href="./contacts.html"><p>Kontakt</p></a>
-                    <a href="./about.html"><p>Om oss</p></a>
-                    <a href="./cart.html"><img class="cart-img" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"></a>
+
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img class="logo-img" src="../IMG/Clockworks-logo.png">
+            <div class="navbar">
+                <a href="../index.html">
+                    <p>Hem</p>
+                </a>
+                <a href="./products.html">
+                    <p>Produkter</p>
+                </a>
+                <a href="./contacts.html">
+                    <p>Kontakt</p>
+                </a>
+                <a href="./about.html">
+                    <p>Om oss</p>
+                </a>
+                <div class="cart-icon">
+                    <img class="cart-img" src="../IMG/cart-icon.png">
+                    <p id="cart-amount">0</p>
                 </div>
-            </nav>
-        </div>
-        <div class="footer">
-            <a href="./documentation.html">Dokumentation</a>
-        </div>
-    </body>
+            </div>
+        </nav>
+    </div>
+    <div class="footer">
+        <a href="./documentation.html">Dokumentation</a>
+    </div>
+    <script src="../cartcounter.js"></script>
+</body>
+
 </html>

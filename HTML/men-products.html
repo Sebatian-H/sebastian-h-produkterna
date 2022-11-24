@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../CSS/style.css">
-        <script type="txt/javascript" src="../shopping-cart.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <img class="logo-img" src="../IMG/Clockworks-logo.png">
-                <div class="navbar">
-                    <a href="../index.html"><p>Hem</p></a>
-                    <a href="./products.html"><p>Produkter</p></a>
-                    <a href="./contacts.html"><p>Kontakt</p></a>
-                    <a href="./about.html"><p>Om oss</p></a>
-                    <a href="./cart.html"><img class="cart-img" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"></a>
-                </div>
-            </nav>
-            <h2>Mens products</h2>
-            <div class="products">
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
-                </div>
-                <div class="product-child">
-                    <a href="#"><img src="../IMG/Watch-img/watch-collection-conquest-l3-760-4-76-5-560x660.webp"></a>
+
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="txt/javascript" src="../shopping-cart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img class="logo-img" src="../IMG/Clockworks-logo.png">
+            <div class="navbar">
+                <a href="../index.html">
+                    <p>Hem</p>
+                </a>
+                <a href="./products.html">
+                    <p>Produkter</p>
+                </a>
+                <a href="./contacts.html">
+                    <p>Kontakt</p>
+                </a>
+                <a href="./about.html">
+                    <p>Om oss</p>
+                </a>
+                <div class="cart-icon">
+                    <img class="cart-img" src="../IMG/cart-icon.png">
+                    <p id="cart-amount">0</p>
                 </div>
             </div>
-            <form>
-                <input type="button" value="Open Window" onclick="openWin()">
-            </form>
-            
+        </nav>
+        <h2 class="page-title">Mens products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-silver.webp">
+                    <h3 class="productname">Blue silver watch</h3>
+                    <p class="price">$129.00</p>
+                    <button class="add-cart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-silver2.webp">
+                <h3 class="productname">White silver watch</h3>
+                <p class="price">$129.00</p>
+                <button class="add-cart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-silver3.webp">
+                <h3 class="productname">Black silver watch</h3>
+                <p class="price">$150.00</p>
+                <button class="add-cart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-lether.webp">
+                <h3 class="productname">Dark brown lether watch</h3>
+                <p class="price">$250.00</p>
+                <button class="add-cart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-lether2.webp">
+                <h3 class="productname">Black lether watch</h3>
+                <p class="price">$165.00</p>
+                <button class="add-cart">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="../IMG/Watch-img/men-watch-lether3.webp">
+                <h3 class="productname">Brown lether watch</h3>
+                <p class="price">$130.00</p>
+                <button class="add-cart">Add To Cart</button>
+            </div>
         </div>
-        <div class="footer">
-            <p>Footer</p>
-        </div>
-    </body>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <script src="../cartcounter.js"></script>
+</body>
+
 </html>

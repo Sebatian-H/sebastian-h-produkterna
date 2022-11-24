@@ -12,7 +12,10 @@
                     <a href="./HTML/products.html"><p>Produkter</p></a>
                     <a href="./HTML/contacts.html"><p>Kontakt</p></a>
                     <a href="./HTML/about.html"><p>Om oss</p></a>
-                    <a href="./HTML/cart.html"><img class="cart-img" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"></a>
+                    <div class="cart-icon">
+                        <img class="cart-img" src="../IMG/cart-icon.png">
+                        <p id="cart-amount">0</p>
+                    </div>
                 </div>
             </nav>
             <div class="slideshow">
@@ -21,31 +24,14 @@
                     <p>Insert text info company and site. djfkgjdflkjkjkdsjfkdsfkldjghfrsdxvbndfdsakksd sdj djsjg lösdk jdsj ljsdh kjdskj sdjfkdsk l fjsdlgkdslskfkdskgl jsdkjg ksdjk dskj gkjs odsk s kdjs jksjd jkdjkgl dsjkg sjdk jkjds</p>
                 </div>
                 <div class="slideshow-image">
-                    <img id="image1">
+                    <img id="image">
                 </div>
             </div>
-            
-            <script>
-                var imgArray = [
-                    './IMG/slideshow-img1.jpeg',
-                    './IMG/slideshow-img2.jpeg',
-                    './IMG/slideshow-img3.jpeg',
-                    './IMG/slideshow-img4.webp'
-                ];
-                var curIndex = 0;
-                var imgDuration = 5000;
-
-                function slideShow() {
-                    document.getElementById('image1').src = imgArray[curIndex];
-                    curIndex++;
-                    if (curIndex == imgArray.length) { curIndex = 0; }
-                    setTimeout("slideShow()", imgDuration);
-                }
-                slideShow();
-            </script>
         </div>
         <div class="footer">
             <p>Footer</p>
         </div>
+        <script src="../cartcounter.js"></script>
+        <script src="slideshow.js"></script>
     </body>
 </html>
