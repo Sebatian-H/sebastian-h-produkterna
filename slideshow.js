@@ -19,5 +19,5 @@ function slideShow() {
     //Sätter en timeout till funktionen ska köras om
     setTimeout("slideShow()", imgDuration);
 }
-//Startar om funktionen
+//Startar funktionen
 slideShow();
