@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./CSS/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <img class="logo-img" src="../IMG/Clockworks-logo.png">
-                <div class="navbar">
-                    <!--Har p tag i a tagarna för att jag ska kunna ändra så att bara länken skewar och inte texten i-->
-                    <a href="./index.html"><p>Hem</p></a>
-                    <a href="./HTML/products.html"><p>Produkter</p></a>
-                    <a href="./HTML/contacts.html"><p>Kontakt</p></a>
-                    <a href="./HTML/about.html"><p>Om oss</p></a>
-                    <div class="cart-icon">
-                        <img class="cart-img" src="../IMG/cart-icon.png">
-                        <!--Har id:et cart-amount för att javascripten ska kunna uppdatera värdet i just denna tagen-->
-                        <p id="cart-amount">0</p>
-                    </div>
-                </div>
-            </nav>
-            <div class="slideshow">
-                <div class="slideshow-text">
-                    <h2>Välkommen</h2>
-                    <p>Insert text info company and site. djfkgjdflkjkjkdsjfkdsfkldjghfrsdxvbndfdsakksd sdj djsjg lösdk jdsj ljsdh kjdskj sdjfkdsk l fjsdlgkdslskfkdskgl jsdkjg ksdjk dskj gkjs odsk s kdjs jksjd jkdjkgl dsjkg sjdk jkjds</p>
-                </div>
-                <div class="slideshow-image">
-                    <!--Har ingen src då javascripten lägger in vilken bild det ska vara i img-->
-                    <img id="image">
+
+<head>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img class="logo-img" src="../IMG/Clockworks-logo.png">
+            <div class="navbar">
+                <!--Har p tag i a tagarna för att jag ska kunna ändra så att bara länken skewar och inte texten i-->
+                <a href="./index.html">
+                    <p>Hem</p>
+                </a>
+                <a href="./HTML/products.html">
+                    <p>Produkter</p>
+                </a>
+                <a href="./HTML/contacts.html">
+                    <p>Kontakt</p>
+                </a>
+                <a href="./HTML/about.html">
+                    <p>Om oss</p>
+                </a>
+                <div class="cart-icon">
+                    <img class="cart-img" src="../IMG/cart-icon.png">
+                    <!--Har id:et cart-amount för att javascripten ska kunna uppdatera värdet i just denna tagen-->
+                    <p id="cart-amount">0</p>
                 </div>
             </div>
+        </nav>
+        <div class="slideshow">
+            <div class="slideshow-text">
+                <h2>Välkommen</h2>
+                <p>
+                    Stort utbud av herrklockor på Clockworks
+                    <br>
+                    <br>
+                    Letar du efter klockor? Då har du hamnat rätt. Här på Clockworks hittar du ett stort urval av både
+                    herr och dam klockor.
+                    <br>
+                    <br>
+                    «Man är aldrig fullt påklädd utan ett leende», säger ordspråket. Det samma kan sägas om klockor.
+                    <br>
+                    <br>
+                    En del personer är inte särskilt intresserade av klockor, och tanken är ju inte heller att du ska
+                    bli klocksamlare. Men faktum är att en snygg och stilig klocka kan göra mer för ditt utseende än en
+                    garderob full av kläder.
+                    <br>
+                    <br>
+                    Detta kan vara extra intressant att veta om du vill ge någon du är romantiskt intresserad av ett
+                    gott intryck.
+                </p>
+            </div>
+            <div class="slideshow-image">
+                <!--Har ingen src då javascripten lägger in vilken bild det ska vara i img-->
+                <img id="image">
+            </div>
         </div>
-        <div class="footer">
-            <a href="./documentation.html">Dokumentation</a>
-        </div>
-        <script src="../cartcounter.js"></script>
-        <script src="slideshow.js"></script>
-    </body>
+    </div>
+    <div class="footer">
+        <a href="./documentation.html">Dokumentation</a>
+    </div>
+    <script src="../cartcounter.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+
 </html>
